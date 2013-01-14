@@ -411,9 +411,7 @@
                 
                 <div id="tagline"><?php bloginfo( 'description' ); ?></div>
                 
-                <div class="searchBox">
-                    <?php get_search_form(); ?>
-                </div>
+              
                 
 			
 
