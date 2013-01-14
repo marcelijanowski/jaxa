@@ -1,0 +1,103 @@
+#    Mail Collector allows you to collect email addresses of users visiting your website using a widget.
+#    Copyright (C) 2010 Ivaldi (http://ivaldi.nl)
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#    You should have received a copy of the GNU General Public License along
+#    with this program; if not, write to the Free Software Foundation, Inc.,
+#    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Julien Barbotin <barbotinjulien@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+
+#. Text in function
+#: mailcollector.php:202
+msgid "Email address succesfully added"
+msgstr "L'adresse e-mail a bien été ajoutée"
+
+#. Text in function
+#: mailcollector.php:52
+msgid "Error message"
+msgstr "Message d'erreur"
+
+#. Text in function
+#: mailcollector.php:50
+msgid "Intro text"
+msgstr "Texte d'introduction"
+
+#. Text in function
+#: mailcollector.php:202
+msgid "Invalid email address or email address already exist"
+msgstr "L'adresse e-mail est invalide ou existe déjà"
+
+#. Text in function
+#: mailcollector.php:202
+msgid "Newsletter"
+msgstr "Lettre d'informations"
+
+#. Text in function
+#: mailcollector.php:54
+msgid "Success message"
+msgstr "Message de réussite"
+
+#. Text in function
+#: mailcollector.php:190
+msgid "Search for email address"
+msgstr "Recherche une adresse"
+
+#. Text in function
+#: mailcollector.php:210
+msgid "Remove"
+msgstr "Supprimer"
+
+#. Text in function
+#: mailcollector.php:243
+msgid "Select email addresses"
+msgstr "Sélectionner les adresses e-mail"
+
+#. Text in function
+#: mailcollector.php:48
+msgid "Title"
+msgstr "Titre"
+
+#. Text in function
+#: mailcollector.php:202
+msgid "With this form, you can subscribe for a newsletter"
+msgstr "Avec ce formulaire, vous pouvez vous inscrire à la lettre d'informations"
+
+msgid "A widget to collect email addresses."
+msgstr "Un widget pour collecter des adresses e-mail."
+
+msgid "Email addresses"
+msgstr "Adresses e-mail"
+
+msgid "Export"
+msgstr "Exporter"
+
+msgid "Registrations"
+msgstr "Inscriptions"
+
+msgid "Copy email addresses"
+msgstr "Copier les adresses e-mail"
+
+msgid "Back to overview"
+msgstr "Retour à la vue d'ensemble"
+
+msgid "The list below can be copied in order to mail these people."
+msgstr "La liste ci-dessous peut être copiée pour écrire à ces personnes."
+
+msgid "Copy afterwards"
+msgstr "Copier la suite"
+

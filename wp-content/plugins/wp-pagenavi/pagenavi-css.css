@@ -1,0 +1,103 @@
+/*
++----------------------------------------------------------------+
+|																							|
+|	WordPress 2.8 Plugin: WP-PageNavi 2.50									|
+|	Copyright (c) 2009 Lester "GaMerZ" Chan									|
+|																							|
+|	File Written By:																	|
+|	- Lester "GaMerZ" Chan															|
+|	- http://lesterchan.net															|
+|																							|
+|	File Information:																	|
+|	- Page Navigation CSS Style													|
+|	- wp-content/plugins/wp-pagenavi/pagenavi-css.css					|
+|																							|
++----------------------------------------------------------------+
+*/
+
+.wp-pagenavi
+{
+    overflow: hidden;
+    margin: 0 0 46px 0;
+    padding: 34px 0;
+    border-bottom: 2px solid #24262a;
+}
+
+.wp-pagenavi > a,
+.wp-pagenavi > span
+{
+    margin: 11px 10px 11px 0;
+    font-size: 22px;
+    line-height: 26px;
+    font-family: 'Homenaje', sans-serif;
+    float: left;
+    display: inline-block;
+    height: 30px;
+    padding: 10px 20px 10px 0;
+}
+
+.wp-pagenavi a, 
+.wp-pagenavi a:link,
+.wp-pagenavi a:visited {
+	text-decoration: none;
+	color: #e72d39;
+}
+
+.wp-pagenavi a:active,
+.wp-pagenavi a:hover {
+	text-decoration: none;
+	color: #24262a;
+}
+
+.wp-pagenavi a.page, 
+.wp-pagenavi a.page:link,
+.wp-pagenavi a.page:visited {
+	text-decoration: none;
+}
+
+.wp-pagenavi span.pages {
+	color: #E8E3D9;
+}
+.wp-pagenavi span
+{
+	color: #24262a;
+}
+
+.wp-pagenavi .nextPrevBlock
+{
+    float: right;
+    width: 160px;
+    height: 72px;
+    overflow: hidden;
+}
+
+.wp-pagenavi .nextPrevBlock > a
+{
+    display: block;
+    float: right;
+    width: 80px;
+    height: 72px;
+    background-image: url(pagenavi-sprite.png);
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+.wp-pagenavi .nextPrevBlock .prevLink
+{
+    background-position: left top;
+}
+
+.wp-pagenavi .nextPrevBlock .prevLink:hover
+{
+    background-position: left bottom;
+}
+
+.wp-pagenavi .nextPrevBlock .nextLink
+{
+    background-position: right top;
+}
+
+.wp-pagenavi .nextPrevBlock .nextLink:hover
+{
+    background-position: right bottom;
+}

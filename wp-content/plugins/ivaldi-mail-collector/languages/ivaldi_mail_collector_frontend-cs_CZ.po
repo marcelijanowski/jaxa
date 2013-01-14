@@ -1,0 +1,103 @@
+#    Mail Collector allows you to collect email addresses of users visiting your website using a widget.
+#    Copyright (C) 2010 Ivaldi (http://ivaldi.nl)
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#    You should have received a copy of the GNU General Public License along
+#    with this program; if not, write to the Free Software Foundation, Inc.,
+#    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Vladislav Musílek <musilekv@seznam.cz>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+
+#. Text in function
+#: mailcollector.php:202
+msgid "Email address succesfully added"
+msgstr "Emailová adresa byla přidána"
+
+#. Text in function
+#: mailcollector.php:52
+msgid "Error message"
+msgstr "Chybová zpráva"
+
+#. Text in function
+#: mailcollector.php:50
+msgid "Intro text"
+msgstr "Vstupní text"
+
+#. Text in function
+#: mailcollector.php:202
+msgid "Invalid email address or email address already exist"
+msgstr "Chybná emailová adresa, nebo je email již uložen"
+
+#. Text in function
+#: mailcollector.php:202
+msgid "Newsletter"
+msgstr "Newsletter"
+
+#. Text in function
+#: mailcollector.php:54
+msgid "Success message"
+msgstr "Potvrzující zpráva"
+
+#. Text in function
+#: mailcollector.php:48
+msgid "Title"
+msgstr "Titulek"
+
+#. Text in function
+#: mailcollector.php:202
+msgid "With this form, you can subscribe for a newsletter"
+msgstr "Vyplněním tohoto formuláře se můžete přihlásit k odběru newsletteru"
+
+msgid "A widget to collect email addresses."
+msgstr "Widget pro sběr emailových adres."
+
+msgid "Email addresses"
+msgstr "Emailové adresy"
+
+msgid "Export"
+msgstr "Export"
+
+msgid "Registrations"
+msgstr "Registrace"
+
+msgid "Copy email addresses"
+msgstr "Kopíruj emailové adresy"
+
+msgid "Back to overview"
+msgstr "Zpět na přehled"
+
+msgid "The list below can be copied in order to mail these people."
+msgstr "OnTento seznam může být zkopírován, pro odeslání emailu těmto lidem."
+
+msgid "Copy afterwards"
+msgstr "Kopírování poté"
+
+#. Text in function
+#: mailcollector.php:190
+msgid "Search for email address"
+msgstr "Vyhledání emailové adresy"
+
+#. Text in function
+#: mailcollector.php:210
+msgid "Remove"
+msgstr "Odstranit"
+
+#. Text in function
+#: mailcollector.php:243
+msgid "Select email addresses"
+msgstr "Vybrat emailové adresy"
+

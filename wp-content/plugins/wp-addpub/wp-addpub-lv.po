@@ -1,0 +1,285 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP AddPub\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-07 23:10+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ernests Kečko <ernests@itviss.lv>\n"
+"Language-Team: Ernests Kečko <ernests.kecko@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: latvian\n"
+"X-Poedit-Country: LATVIA\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: wp-addpub.php:176
+#: wp-addpub.php:256
+msgid "Title is required."
+msgstr "Nosaukums ir obligāts lauks."
+
+#: wp-addpub.php:177
+#: wp-addpub.php:257
+msgid "File is required."
+msgstr "Fails ir obligāts lauks."
+
+#: wp-addpub.php:189
+#: wp-addpub.php:268
+msgid "Invalid File Format."
+msgstr "Nederīgs faila formāts."
+
+#: wp-addpub.php:189
+#: wp-addpub.php:268
+msgid "(Only the following format are accepted: jpg, jpeg, jpe, gif, png, swf)"
+msgstr "(Tikai sekojoši faila formāti tiek akceptēti: jpg, jpeg, jpe, gif, png, swf)"
+
+#: wp-addpub.php:238
+msgid "Banner was added successfully."
+msgstr "Banneris tika veiksmīgi pievienots."
+
+#: wp-addpub.php:343
+msgid "Banner was modified successfully."
+msgstr "Banneris tika veiksmīgi uzlabots."
+
+#: wp-addpub.php:349
+msgid "Banners management"
+msgstr "Banneru pārvalde"
+
+#: wp-addpub.php:350
+#: wp-addpub.php:451
+#: wp-addpub.php:455
+msgid "Add a banner"
+msgstr "Pievienot banneri"
+
+#: wp-addpub.php:355
+msgid "Banner was deleted."
+msgstr "Banneris tika pievienots."
+
+#: wp-addpub.php:358
+msgid "Banner was activated."
+msgstr "Banneris tika aktivizēts."
+
+#: wp-addpub.php:361
+msgid "Banner was deactivated."
+msgstr "Banneris tika deaktivizēts."
+
+#: wp-addpub.php:372
+msgid "Title"
+msgstr "Virsraksts"
+
+#: wp-addpub.php:373
+#: wp-addpub.php:477
+msgid "Zone"
+msgstr "Zona"
+
+#: wp-addpub.php:374
+#: wp-addpub.php:481
+msgid "Filter"
+msgstr "Filtrs"
+
+#: wp-addpub.php:375
+#: wp-addpub.php:473
+msgid "Link"
+msgstr "Norāde (URL)"
+
+#: wp-addpub.php:376
+#: wp-addpub.php:494
+msgid "Type"
+msgstr "Tips"
+
+#: wp-addpub.php:377
+msgid "Width"
+msgstr "Platums"
+
+#: wp-addpub.php:378
+msgid "Height"
+msgstr "Augstums"
+
+#: wp-addpub.php:379
+msgid "Dimensions"
+msgstr "Izmēri"
+
+#: wp-addpub.php:380
+msgid "Action"
+msgstr "Darbības"
+
+#: wp-addpub.php:407
+msgid "View in new window"
+msgstr "Apskatīt jaunā logā"
+
+#: wp-addpub.php:408
+msgid "View"
+msgstr "Apskatīt"
+
+#: wp-addpub.php:411
+#: wp-addpub.php:412
+#: wp-addpub.php:514
+msgid "Edit"
+msgstr "Labot"
+
+#: wp-addpub.php:418
+msgid "Desactivate"
+msgstr "Deaktivizēt"
+
+#: wp-addpub.php:420
+msgid "Activate"
+msgstr "Aktivizēt"
+
+#: wp-addpub.php:422
+msgid "Are you sure ?"
+msgstr "Vai esat pārliecināts?"
+
+#: wp-addpub.php:423
+msgid "Delete"
+msgstr "Dzēst"
+
+#: wp-addpub.php:429
+msgid "No banners found"
+msgstr "Nav banneru"
+
+#: wp-addpub.php:451
+msgid "Edit a banner"
+msgstr "Rediģēt banneri"
+
+#: wp-addpub.php:466
+msgid "Title (required)"
+msgstr "Nosaukums (obligāts)"
+
+#: wp-addpub.php:478
+msgid "a text field that can be used to identify an area of your page (e.g. sidebar, footer)"
+msgstr "teksta lauks, kas palīdz identificēt lapas rajonu, kurā šis banneris varētu tikt rādīts (piem., \"Sānu lielais\", \"Sānu četrinieks\")"
+
+#: wp-addpub.php:482
+msgid "a text field that can be used as a criterion for display (e.g. Category1, Category2)"
+msgstr "teksta lauks, ko var izmantot kā papildkritēriju banneru apkopošanai (piem., \"Pašreklāma\", \"Partneri\")"
+
+#: wp-addpub.php:485
+msgid "Target (required)"
+msgstr "Mērķis (obligāts)"
+
+#: wp-addpub.php:488
+msgid "_SELF"
+msgstr "Atvērt tajā pašā lapā"
+
+#: wp-addpub.php:489
+msgid "_BLANK"
+msgstr "Atvērt jaunā pārlūka logā"
+
+#: wp-addpub.php:496
+msgid "FILE"
+msgstr "Fails"
+
+#: wp-addpub.php:497
+msgid "HTML"
+msgstr "HTML"
+
+#: wp-addpub.php:501
+msgid "Upload file (required)"
+msgstr "Faila augšupielāde (obligāta)"
+
+#: wp-addpub.php:502
+msgid "Leave blank, if you don't want to change the file:"
+msgstr "Atstājiet tukšu, ja nevēlaties, lai mainītu failu:"
+
+#: wp-addpub.php:502
+msgid "(Only the following format are accepted: jpg, jpeg, gif, png, swf)"
+msgstr "(Tikai sekojoši faila formāti tiek akceptēti: jpg, jpeg, jpe, gif, png, swf)"
+
+#: wp-addpub.php:505
+msgid "HTML Code (required)"
+msgstr "HTML kods (obligāts)"
+
+#: wp-addpub.php:509
+msgid "Active"
+msgstr "Aktīvs"
+
+#: wp-addpub.php:514
+msgid "Add"
+msgstr "Pievienot"
+
+#: wp-addpub.php:550
+msgid "Configure banner display."
+msgstr "Konfigurēt banneru attēlošanu."
+
+#: wp-addpub.php:551
+msgid "Banners"
+msgstr "Banneri"
+
+#: wp-addpub.php:610
+msgid "Title:"
+msgstr "Virsraksts:"
+
+#: wp-addpub.php:611
+msgid "Can leave it blank"
+msgstr "Var atstāt tukšu."
+
+#: wp-addpub.php:613
+msgid "Zone:"
+msgstr "Zona:"
+
+#: wp-addpub.php:622
+#: wp-addpub.php:644
+msgid "count:"
+msgstr "skaits:"
+
+#: wp-addpub.php:625
+#: wp-addpub.php:647
+msgid "All banners"
+msgstr "Visi banneri"
+
+#: wp-addpub.php:630
+msgid "Select banner zone (e.g. \"Sidebar\", \"Footer\")"
+msgstr "Izvēlieties bannera zonu (piem., \"Sānu lielais\")."
+
+#: wp-addpub.php:634
+msgid "Filter:"
+msgstr "Filtrs:"
+
+#: wp-addpub.php:652
+msgid "Select banner filter (e.g. \"Movie\", \"Music\")"
+msgstr "Izvēlieties bannera filtru (piem., \"Iekšējie banneri\")."
+
+#: wp-addpub.php:657
+msgid "Count:"
+msgstr "Banneru skaits:"
+
+#: wp-addpub.php:658
+msgid "Set number of banners to be displayed"
+msgstr "Rādāmo banneru skaits."
+
+#: wp-addpub.php:662
+msgid "Banner IDs:"
+msgstr "Obligāto banneru ID rinda:"
+
+#: wp-addpub.php:663
+msgid "Set comma delimited ID's of specific banners you want to be displayed (e.g. <strong>1,2,5</strong>)"
+msgstr "Uzrādiet, atdalot ar komatu ID tiem banneriem, kurus noteikti ir jāuzrāda (piem., <strong>1,2,5</strong>)"
+
+#: wp-addpub.php:667
+msgid "Random:"
+msgstr "Attēlot jauktā kārtībā"
+
+#: wp-addpub.php:671
+msgid "Check if banners could be displayed randomly"
+msgstr "Atzīmējiet vai bannerus jauktā kārtībā. Ja ne, tad obligāti rādāmie banneri būs pirmie."
+
+#~ msgid "Queue:"
+#~ msgstr "Kārtība:"
+#~ msgid ""
+#~ "Set number of banners to be displayed and set ID's of specific banners (e."
+#~ "g. <strong>*,1,*,*</strong> - 4 banners overall, one of them is with ID=1)"
+#~ msgstr ""
+#~ "Uzstādied banneru skaitu un specifisku banneru ID (piem.. <strong>*,1,*,"
+#~ "*</strong> - tiks parādīti 4 banneri, viens no tiem būs ar ID=1)."
+#~ msgid "No zones defined"
+#~ msgstr "Nav definētu zonu"
+#~ msgid "Error : one ID is required"
+#~ msgstr "Kļūda: viens ID ir nepieciešams."
+#~ msgid ""
+#~ "Version <strong>%s</strong> is available on the <a href='%s'>plugin's "
+#~ "site</a>"
+#~ msgstr ""
+#~ "Versija <strong>%s</strong> ir pieejama <a href='%s'>plugina vietnē</a>"
+

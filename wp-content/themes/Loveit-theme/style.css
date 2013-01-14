@@ -1,0 +1,2210 @@
+/* --
+Theme Name: LOVE it
+Theme URI: http://www.themeforest.net/user/themiac
+Description: Premium Wordpress Magazine Theme
+Author: Themiac
+Author URI: http://www.themiac.com/
+Version: 1
+
+All files, unless otherwise stated, are released under the GNU General Public License version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+
+-- */
+
+@import url("css/reset.css");
+
+/* --
+
+Styles Index
+=======
+1.0 Document Body
+2.0 Site structure
+3.0 Common Classes
+4.0 Basic Alignments
+5.0 Default Links
+6.0 Vertical Rhythm
+7.0 Default Headings
+8.0 Secondary Navigation
+9.0 Header
+10.0 Primary Navigation
+11.0 Forms
+12.0 Entry Styles
+    12.1 Entry Headers
+    12.2 Default Text Elements
+    12.3 Default Lists
+    12.4 Tables
+    12.5 Images
+    12.6 WP Gallery
+    12.7 Comments
+    12.9 Shortcodes
+13.0 Page Navigation
+14.0 Post Page Styles
+15.0 Breadcrumbs Styles
+16.0 Post Share Styles
+17.0 Related Posts
+18.0 Widgets
+    18.1 Calendar Widget
+    18.2 Widget lists
+    18.3 125 Ads Widget
+    18.4 Twitter Widget
+    18.5 Flickr Widget
+    18.6 Video Widget
+    18.7 Banner Widget
+    18.8 Follow Us Widget
+    18.9 Newsletter Widget - Plugin ivaldi-mail-collector
+    18.10 Search Widget
+    18.11 Tabbed Widget
+    18.12 Social Counter Widget
+19.0 Archives Template
+20.0 Full Width Template
+21.0 Contact Form Template
+22.0 Footer
+23.0 Category-blog
+24.0 Page Template
+25.0 Page Template full-width
+26.0 Single Template
+27.0 Gallery Category
+28.0 Home Template
+    28.1 Big Slider
+    28.2 Story slider
+    28.3 Recent Posts
+    28.4 Category Block Posts
+    28.5 Bottom Blocks
+    28.6 Home Gallery block
+x.x Gallery Post Thumbnail Block - Plugin banesto-gallery-post-attach
+x.x Gallery Inside Content - Plugin banesto-gallery-post-attach
+x.x Clearfix
+x.x MailChimp plugin
+
+-- */
+
+/* -- 1.0 Document Body -- */
+body, input, textarea { font: 12px/20px Arial, sans-serif; color: #333; }
+
+.clear
+{
+    clear: both;
+}
+
+body
+{
+    min-width: 990px;
+}
+
+/* -- 2.0 Site structure -- */
+#content { width: 940px; margin: 0 auto; }
+#primary 
+{
+    width: 614px; 
+    margin-top: 30px;
+    float: left;
+}
+
+#sidebar
+{
+    width: 288px;
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+#footer { clear: both; }
+
+/* -- 3.0 Common Classes -- */
+.rounded { -moz-border-radius: 2px; -webkit-border-radius: 2px; -khtml-border-radius: 2px; border-radius: 2px; }
+.hidden { display: none; }
+.sticky {  }
+
+/* -- 4.0 Basic Alignments -- */
+.alignleft { float: left; }
+.alignright { float: right; }
+.aligncenter { margin-left: auto; margin-right: auto; display: block; clear: both; }
+
+/* -- 5.0 Default Links -- */
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a img { border: none; }
+
+/* -- 6.0 Vertical Rhythm -- */
+.entry-meta 
+{
+    margin-bottom: 30px; 
+}
+
+p, pre, ul, ol, dl, dd, blockquote, address, table, fieldset, form, .gallery-row, .post-thumb, .author-bio { margin-bottom: 20px; }
+
+.widget 
+{ 
+}
+
+#sidebar .widget
+{
+    border-bottom: 2px solid #24262a;
+    margin-bottom: 38px;
+}
+
+.hentry, .navigation-links, .hfeed, .nav, #featured, .pinglist { margin-bottom: 40px; }
+.children, .entry-content ol ol, .entry-content ul ul, .widget ul ul { margin-bottom: 0; }
+
+/* -- 7.0 Default Headings -- */
+h1, h2, h3, h4, h5, h6 
+{ 
+    /*font-family: 'Homenaje', sans-serif;*/ 
+    font-weight: normal; 
+}
+h1 { font-size: 22px; line-height: 30px; }
+h2 { font-size: 20px; line-height: 22px; }
+h3 { font-size: 16px; line-height: 20px; }
+h4 { font-size: 14px; line-height: 18px; }
+h5 { font-size: 12px; line-height: 18px; }
+h6 { font-size: 10px; line-height: 16px; }
+
+h1.mainTitle
+{
+    font-size: 34px;
+    line-height: 40px;
+    font-family: 'Homenaje',sans-serif;
+    margin: 50px 0 30px;
+}
+
+.page-title { font-size: 14px; font-weight: bold; margin-bottom: 15px; }
+
+.entry-title, .entry-title a 
+{ 
+    font-family: 'Homenaje', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.entry-title
+{
+    margin-bottom: 20px;
+}
+
+.container
+{
+    max-width: 1240px;
+    min-width: 990px;
+    margin: 0 auto;
+    background: none repeat scroll 0 0 #F3F5F5;
+    width: 100%;
+}
+
+.entry-content p
+{
+    overflow: hidden;
+}
+
+
+/* -- 8.0 Secondary Navigation -- */
+#secondary-nav { float: left; }
+#secondary-nav ul { margin: 0; padding: 0; list-style: none; height: 30px; line-height: 30px; }
+#secondary-nav ul a { display: inline-block; position: relative; }
+#secondary-nav ul li { float: left; position: relative; }
+#secondary-nav ul li:hover { visibility: inherit; /* fixes IE7 'sticky bug' */ }
+#secondary-nav ul ul { position: absolute; top: -9999em; width: 180px; /* left offset of submenus need to match (see below) */ }
+#secondary-nav ul ul li { width: 100%; }
+
+	/* Make sub menus appear */
+	#secondary-nav ul li:hover ul,
+	#secondary-nav ul li.sfHover ul { left: -1px; top: 30px; /* match top ul list item height */ z-index: 99; }
+
+	/* Hide all subs subs (4 levels deep) */
+	#secondary-nav ul li:hover li ul,
+	#secondary-nav ul li.sfHover li ul,
+	#secondary-nav ul li li:hover li ul,
+	#secondary-nav ul li li.sfHover li ul,
+	#secondary-nav ul li li li:hover li ul,
+	#secondary-nav ul li li li.sfHover li ul { top: -9999em; }
+
+	/* Displays all subs subs (4 levels deep) */
+	#secondary-nav ul li li:hover ul,
+	#secondary-nav ul li li.sfHover ul,
+	#secondary-nav ul li li li:hover ul,
+	#secondary-nav ul li li li.sfHover ul,
+	#secondary-nav ul li li li li:hover ul,
+	#secondary-nav ul li li li li.sfHover ul { left: 180px; /* match .nav ul width */ top: -1px;  }
+
+	/* Secondary Navigation Skin  */
+	#secondary-nav ul a { padding: 0 6px; height: 30px; line-height: 30px; }
+	#secondary-nav ul li.current_menu_item ul li a,
+	#secondary-nav ul li.current_page_item ul li a { color: #333; }
+	#secondary-nav ul a:hover { text-decoration: none; }
+	#secondary-nav ul ul { border-top: 1px solid #eee; }
+	#secondary-nav ul ul li { border: 1px solid #eee; border-top: none; background: #f8f8f8; }
+	#secondary-nav ul ul li.sfHover, #secondary-nav ul ul li.sfHover, #secondary-nav ul ul a:focus, #secondary-nav ul ul a:hover, #secondary-nav ul ul a:active { background: #fff; outline: 0; display: block; }
+
+/* -- 9.0 Header -- */
+#header 
+{
+    height: 127px;
+    margin: 0 auto;
+    padding: 45px 0 0;
+    width: 100%;
+}
+
+.headerWrap
+{
+    overflow: hidden;
+    height: 77px;
+    width: 100%;
+    margin: 0 auto;
+    width: 940px;
+}
+
+.searchBox
+{
+    float: right;
+    height: 33px;
+    margin-top: 16px;
+    text-align: right;
+    width: 240px;
+}
+
+.search-container 
+{
+    display: block;
+    position: relative;
+    width: 240px;
+}
+
+.search-container div.input
+{
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-radius: 16px 16px 16px 16px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) inset;
+    float: right;
+    padding: 5px 15px 5px;
+    width: 65px;
+}
+
+.search-post .search-container
+{
+    width: 370px;
+}
+
+.search-post .search-container div.input
+{
+    width: 300px;
+}
+
+.search-container input.search-input
+{
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    padding: 0;
+    width: 100%;
+    font-size: 11px;
+    line-height: 1;
+}
+
+.search-container input.search-input:focus 
+{
+    outline:none;
+}
+
+.search-container .searchsubmit
+{
+    float: right;
+    margin-left: 7px;
+}
+
+#logo { float: left; }
+
+#logo, #logo a 
+{ 
+    font-size: 28px; 
+    line-height: 30px; 
+    color: #000; 
+    font-weight: bold; 
+    width: 220px; 
+    display: block;
+}
+
+#logo a:hover { text-decoration: none; }
+#tagline
+{
+    float: left;
+    font-family: times new roman;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 42px;
+    padding-top: 7px;
+}
+#banner-header { float: right; }
+#banner-header img { padding: 4px; background: #f8f8f8; }
+
+
+/* -- 10.0 Primary Navigation -- */
+.menu-primary-menu-container
+{
+    position: relative;
+    z-index: 2;
+}
+
+#primary-nav 
+{ 
+    width: 940px; 
+    margin: 0 auto 0px auto; 
+    height: 50px; 
+    z-index: 299; 
+    position: relative; 
+}
+#primary-nav ul 
+{
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    line-height: 50px; 
+    position: absolute; 
+    height: 50px;
+}
+
+#primary-nav ul a { display: inline-block; position: relative; }
+#primary-nav ul li
+{ 
+    float: left; 
+    position: relative;
+    z-index: 2;
+}
+#primary-nav ul li:hover { visibility: inherit; /* fixes IE7 'sticky bug' */ }
+
+	/* Primary Navigation Skin  */
+	#primary-nav ul { font-size: 13px; text-transform: capitalize; }
+	
+	/* top level skin */
+	#primary-nav ul li
+    {
+        padding: 0; 
+    }
+	#primary-nav ul a 
+    { 
+        padding-right: 50px;
+        height: 40px; 
+        line-height: 40px; 
+        font-size: 22px;
+        font-family: 'Homenaje', sans-serif;
+        padding-bottom: 10px;
+    }
+    
+	#primary-nav ul a:hover,
+	#primary-nav ul li.sfHover a,
+	#primary-nav ul li.current-cat a,
+	#primary-nav ul li.current-menu-item a
+	{ 
+        text-decoration: none;
+    }
+    
+    #primary-nav ul li.last a
+    {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    
+	
+	/* 2nd level skin */
+	#primary-nav ul ul 
+    { 
+        height: auto;
+        padding: 10px 0 5px 0; 
+        background: #333; 
+        -moz-border-radius: 0 0 2px 2px; 
+        -webkit-border-bottom-left-radius: 2px; 
+        -webkit-border-bottom-right-radius: 2px; 
+        -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.5); 
+        -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.5); 
+    }
+	#primary-nav ul ul li { height: 30px; line-height: 30px; border: none; padding: 5px 12px; float: none; }
+	#primary-nav ul ul li a
+    { 
+        height: 30px; 
+        display: block; 
+        font-size: 20px;
+        line-height: 25px; 
+    }
+	#primary-nav ul li.sfHover ul a { color: #ccc; padding: 0 5px; }
+	#primary-nav ul li.sfHover ul li:first-child a { background: none; }
+	#primary-nav ul li.sfHover ul a:hover { color: #f8f8f8; }
+	
+	/* 3rd level onwards */t
+	#primary-nav ul ul ul { padding: 0; -moz-border-radius: 0 2px 2px 0; -webkit-border-bottom-left-radius: 0; -webkit-border-top-right-radius: 2px; }	
+	#primary-nav ul ul li.sfHover, #primary-nav ul ul li.sfHover, #primary-nav ul ul a:focus, #primary-nav ul ul a:hover, #primary-nav ul ul a:active { outline: 0; }
+	
+	/* Fluid effect */
+	#primary-nav a { display: block; width: auto; }
+	#primary-nav li { float: left; width: auto; position: relative; }
+	#primary-nav li ul { position: absolute; width: auto; left: -999em; min-width: 100%; }
+	#primary-nav li:hover ul,
+	#primary-nav li.sfHover ul { left: auto; top: 51px; z-index: 5000;}
+	#primary-nav ul ul li:hover ul,
+	#primary-nav ul ul li.sfHover ul { margin-left: 100%; left: 0; top: -10px; }
+	#primary-nav li li { white-space: nowrap; min-width: 140px; }
+
+#primary-nav .back 
+{
+    background-color: #000000;
+    bottom: 0;
+    height: 5px;
+    left: 0;
+    list-style: none outside none;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* -- 11.0 Forms -- */
+input, textarea, button { background: transparent;  border: none; }
+input, textarea, button { padding: 0px; }
+button,
+input[type=submit], 
+#mc_signup_submit 
+{
+    padding: 2px 10px; 
+    cursor: pointer; 
+}
+input:focus, 
+textarea:focus, 
+button:hover 
+{
+}
+#submit { cursor: pointer; }
+
+
+/* -- 12.0 Entry Styles --*/
+.entry-meta 
+{ 
+    font-size: 12px; 
+    line-height: 17px;
+}
+
+	/* -- 12.1 Entry Headers -- */
+    .entry-content h2,
+    .entry-content h3,
+    .entry-content h4,
+    .entry-content h5,
+    .entry-content h6
+    {
+        font-family: 'Homenaje', sans-serif;
+    }
+    
+	.entry-content h2 
+    {
+        margin: 10px 0 15px; 
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+	/* -- 12.2 Default Text Elements -- */
+	address { font-style: italic; }
+	abbr[title], acronym[title], dfn[title] { cursor: help; border-bottom: 1px dotted #666; }
+	blockquote { font-family: Cambria, Georgia, "Times New Roman", Times, serif; color: #666; font-style: italic; border-left: 1px solid #ddd; margin-left: 15px; padding-left: 10px; }
+	strong { font-weight: bold; }
+	em, dfn, cite { font-style: italic; }
+	dfn { font-weight: bold; }
+	sup { font-size: 11px; vertical-align: top; }
+	sub { font-size: 11px; vertical-align: bottom; }
+	small { font-size: 11px; }
+	del { text-decoration: line-through; }
+	ins { text-decoration: underline; }
+	code, pre { line-height: 18px; }
+	var, kbd, samp, code, pre { font: 12px/18px Consolas, "Andale Mono", Courier, "Courier New", monospace; background: #efefef; }
+	kbd { font-weight: bold; }
+	samp, var { font-style: italic; }
+	pre { white-space: pre; overflow: auto; padding: 10px; border: 1px solid #ddd; clear: both; }
+	code { padding: 3px; }
+
+	/* -- 12.3 Default Lists -- */
+	ul, ol, dl { margin-left: 30px; }
+
+	/* -- 12.4 Tables -- */
+	table { border: 1px solid #ccc; border-width: 1px; line-height: 18px; margin: 0 0 22px 0; text-align: left; padding: 0 5px; }
+	table .even { background: #ddd; }
+	caption { text-align: left; }
+	tr { border-bottom: 1px solid #ccc; }
+	th, td { padding: 5px; vertical-align: middle; text-align: center; }
+
+	/* -- 12.5 Images -- */
+	img.alignleft { float: left; margin: 15px; }
+	img.alignright { display: block; margin: 15px; }
+	img.aligncenter { margin-left: auto; margin-right: auto; display: block; clear: both; margin-top: 5px; }
+	.wp-caption { text-align: center; margin: 15px; font-family: Georgia, serif; font-style: italic; }
+	.wp-caption img, .wp-caption img a { margin: 0; padding: 0; border: 0 none; }
+	.wp-caption .wp-caption-text { margin: 0; padding: 5px; }
+	.wp-smiley { max-height: 13px; margin: 0 !important; }
+
+	/* -- 12.6 WP Gallery -- */
+	.gallery
+    { 	
+        margin: 0 -20px 10px !important;
+        overflow: hidden;
+    }
+	.gallery .gallery-item 
+    {
+        float: left; 	
+        margin-top: 25px !important;
+        text-align: center;	
+        width: 33%; 
+    }
+    
+    .gallery .gallery-item:nth-child(-n+3)
+    {
+        margin-top: 0 !important;
+    }
+    
+	.gallery-columns-2 .gallery-item {	width: 50%; }
+	.gallery-columns-4 .gallery-item {	width: 25%; }
+	.gallery img 
+    { 	
+        border: 0 none !important; 
+    }
+	.gallery-columns-2 .attachment-medium {	max-width: 92%; height: auto; }
+	.gallery-columns-4 .attachment-thumbnail {	max-width: 84%;	height: auto; }
+	.gallery .gallery-caption {	color: #888;	font-size: 12px;	margin: 0 0 12px; }
+	.gallery dl {	margin: 0; }
+	.gallery img {	border: 10px solid #f1f1f1; }
+	.gallery br+br {	display: none; }
+    
+    
+    .entry-content ul
+    {
+        margin: 20px 0;
+        list-style: none outside none;
+    }
+    
+    .entry-content ul li
+    {
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 19px;
+        padding-bottom: 10px;
+        padding-left: 28px;
+    }
+
+	/* -- 12.7 Comments -- */
+	h2#comments, 
+    #respond h2 
+    {
+        padding: 0; 
+        margin: 38px 0 5px 0; 
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+    }
+	ol.commentlist 
+    {
+        margin: 0;
+        list-style-type: none; 
+        overflow: visible; 
+    }
+	
+	li.comment 
+    { 
+        margin: 35px 0;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #E3E5E5;
+    }
+    
+	li.comment .head
+    {
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    
+	li.comment .comment-body
+    {
+        margin: 0 0 0 85px; 
+        position: relative; 
+    }
+	li.comment .comment-meta 
+    { 
+        overflow: hidden; 
+        float: left; 
+        display: block; 
+    }
+	li.comment .comment-text 
+    {
+    }
+	li.comment .avatar
+    { 
+        position: absolute; 
+        left: -85px; 
+        top: 5px;
+        padding: 0px; 
+        background: #f8f8f8; 
+        border: none;
+    }
+	li.comment p { clear: both; }
+	li.comment cite, 
+    li.bypostauthor li.comment cite 
+    { 
+        float: left;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 20px;
+        margin: 0 15px 0 0;
+    }
+	li.comment cite a, 
+    li.bypostauthor li.comment cite a 
+    {
+        color: #333; 
+    }
+	li.comment cite a:hover { text-decoration: none;}
+	a.commentmetadata 
+    { 
+        font-size: 11px;
+        line-height: 18px;
+        text-decoration: none;
+    }
+	
+	li.comment .comment-body a.comment-reply-link { display: block; position: absolute; right: 0; top: 0px; color: #999; font-weight: bold; background: url(images/bg-arrow-grey.png) right center no-repeat; padding: 0 10px 0 0; font-size: 10px; text-transform: uppercase; }
+	li.comment .comment-body a.comment-reply-link:hover {color: #666;text-decoration: none;	}
+	
+	.children { list-style-type: none; margin: 20px 0 0 70px; }
+	.children li.comment { margin: 0 0 20px 0; }
+	
+    #respond
+    {
+        margin-top: 30px;
+    }
+	#respond h2 { margin-top: 15px; }
+	#commentform {
+        margin: 0px 0 20px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #24262A;
+    }
+	
+    #commentform div.wrap 
+    {
+        margin-bottom: 10px;
+    }
+
+    #commentform div.wrapBig 
+    {
+        margin: 20px 0 30px;
+    }
+
+    .input-container
+    {
+        -moz-border-bottom-colors: none;
+        -moz-border-image: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-radius: 16px 16px 16px 16px;
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) inset;
+        padding: 5px 15px 5px;
+        position: relative;
+    }
+    
+    .input-container input[type=text],
+    .textarea-container textarea
+    {
+        background: none repeat scroll 0 0 transparent;
+        border: 0 none;
+        padding: 0;
+        width: 100%;
+        font-size: 11px;
+        line-height: 1;
+        outline: none;
+    }
+	
+    .input-container input[type=text]
+    {
+        /*height: 20px;*/
+    }
+    
+    #commentform div.input-container
+    { 
+        width: 260px;
+    }
+	
+    
+    .textarea-container 
+    {
+        border-radius: 7px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) inset;
+        padding: 5px 15px 5px;
+        position: relative;
+    }
+    
+	#commentform textarea 
+    { 
+        width: 582px; 
+        max-width: 582px;
+        min-width: 582px;
+        height: 155px; 
+        min-height: 155px;
+        max-height: 300px;
+        background: none;
+        resize: vertical;
+        overflow: auto;
+        line-height: 1 !important;
+    }
+	#commentform input#submit,
+    .ivaldi_mail_collector_frontend .submit,
+    #contactForm button
+    {
+        border: none; 
+        color: #fff; 
+        padding: 5px 10px; 
+        font-family: 'Homenaje',sans-serif;
+        font-size: 17px;
+        border-radius: 4px;
+        float: right;
+    }
+	#commentform label.error
+    { 
+        font-size: 11px;
+        font-style: normal;
+        left: 300px;
+        position: absolute;
+        text-align: left;
+        top: 6px;
+        width: 300px;
+    }
+    
+	#commentform .textarea-container label.error
+    {
+        bottom: -13px;
+        height: 12px;
+        left: 16px;
+        top: auto;
+    }
+    
+    #commentform .form-submit
+    {
+        display: block;
+        clear: both;
+        overflow: hidden;
+    }
+    
+	.cancel-comment-reply {	margin: 0 0 10px; text-align: right; }
+	
+	/* -- 12.9 Shortcodes -- */
+	span.quote_left { float: left; display: inline; width: 240px; margin: 15px 15px 10px 0; padding: 0 10px 0 0; border-right: 3px solid #e8e8e8; font: 14px/22px "Georgia", serif; text-align: right; font-style: italic; color: #333; }
+	span.quote_right { float: right; display: inline; width: 240px; margin: 15px 0 10px 15px; padding: 0 0 0 10px; border-left: 3px solid #e8e8e8; font: 14px/22px "Georgia", serif; font-style: italic; color: #333; }
+	blockquote { margin: 0 20px 15px; padding: 0 0 0 10px; border-left: 3px solid #e8e8e8; font: 14px/22px "Georgia", serif; font-style: italic; color: #333; }
+
+    
+/* -- 13.0 Page Navigation -- */
+.page-navigation .nav-next { float: left; }
+.page-navigation .nav-previous { float: right; }
+.single-page-navigation .nav-next { float: right; }
+.single-page-navigation .nav-previous { float: left; }
+
+
+/* -- 14.0 Post Page Styles -- */
+.single-entry-title 
+{ 
+    padding: 10px 0 10px 0;
+    font-size: 36px; 
+    line-height: 44px;
+}
+
+
+/* -- 15.0 Breadcrumbs Styles -- */
+p.breadcrumb 
+{ 
+    font-size: 11px; 
+    margin: 0px 0 20px;
+}
+
+p.breadcrumb a
+{
+    margin: 0 15px 0 0;
+    padding: 0 0 0 18px;
+}
+
+p.breadcrumb a.home
+{
+    background: none;
+    padding: 0;
+}
+
+
+p.breadcrumb a:hover
+{ 
+    text-decoration: none; 
+}
+
+.entry-content 
+{ 
+    margin-bottom: 40px; 
+    overflow: hidden;
+}
+
+
+/* -- 16.0 Post Share Styles -- */
+ul.share
+{ 
+    margin: 15px 0 0px 0; 
+    list-style: none; 
+}
+ul.share li
+{ 
+    line-height: 17px; 
+    margin: 0 0 7px 0; 
+    padding: 0; 
+    font-size: 11px; 
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+ul.share li.fb { background-position: 0 -22px; }
+ul.share li.digg { background-position: 0 -44px; }
+ul.share li.reddit { background-position: 0 -66px; }
+ul.share li.del { background-position: 0 -88px; }
+ul.share li.techno { background-position: 0 -110px; }
+ul.share li.linkedin { background-position: 0 -132px; }
+ul.share li.email { background-position: 0 -154px; }
+ul.share li.flattr { background-position: 0 -176px; }
+ul.share li.xing { background-position: 0 -198px; }
+ul.share li.tweet, 
+ul.share li.fblike, 
+ul.share li.gplusone, 
+ul.share li.pinterest, 
+ul.share li.stumble 
+{ 
+    background-image: none; 
+    margin-right: 10px;
+    margin-bottom: 3px; 
+    position: relative; 
+}
+ul.share li.tweet span { position: absolute; top: 2px; left: 81px; padding-left: 8px; }
+ul.share li.fblike span { position: absolute; top: 0; left: 73px; background: #fff; padding-left: 8px; height: 20px; line-height: 20px; }
+ul.share li.gplusone span { position: absolute; top: 2px; left: 57px; padding-left: 8px; }
+ul.share li.pinterest span { position: absolute; top: 2px; left: 68px; padding-left: 8px; }
+ul.share li.stumble span { position: absolute; top: 2px; left: 43px; padding-left: 8px; }
+ul.share li a { color: #666; }
+ul.share li a:hover { text-decoration: none; }
+	
+	.blog .type-post .post-thumb { margin-bottom: 10px; }
+	.blog .type-post .post-thumb a { display: block; height: 260px; width: 620px; }
+	.blog .type-post .post-thumb img { padding: 4px; background: #f8f8f8; border: 1px solid #eee; margin: 0; }
+	.blog .type-post .post-thumb img:hover { background: #333; border-color: #222; }
+	
+    
+/* -- 17.0 Related Posts -- */
+#related-posts .post-container { background: url(images/bg-dots.gif) left bottom repeat-x; padding: 0 0 10px 0; margin: 0 0 10px 0; }
+#related-posts .post-thumb { margin: 0; padding: 0; }
+#related-posts .post-thumb img { padding: 4px; background: #f8f8f8; border: 1px solid #eee; float: left; margin: 0 10px 0 0; }
+#related-posts .post-thumb img:hover { background: #333; border-color: #222; }
+#related-posts .entry-title, #related-posts .entry-title a { font-size: 13px; line-height: 20px; color: #333; font-weight: bold; }
+#related-posts .entry-title a:hover { text-decoration: none; }
+#related-posts .entry-meta { margin: 0 0 3px 0; padding: 0; background: none; }
+#related-posts .entry-meta, #related-posts .entry-meta a { font-size: 10px; text-transform: uppercase; color: #999; }
+#related-posts .entry-meta a:hover { text-decoration: none; color: #333; }
+#related-posts .entry-summary p { margin: 0; }
+
+
+/* -- 18.0 Widgets -- */
+.widget-title 
+{ 
+    font-family: 'Homenaje', sans-serif;
+    font-size: 20px;
+    font-weight: normal; 
+    margin: 0 0 20px 0;
+}
+
+#sidebar .widget-title 
+{ 
+    display: inline-block;
+    padding: 5px 20px 5px 10px;
+    zoom: 1;
+    *display: inline;
+}
+#footer .widget-title 
+{
+    font-family: 'Homenaje', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+	/* -- 18.1 Calendar Widget -- */
+	.widget_calendar caption { margin-bottom: 5px; }
+	.widget_calendar table { width: 100% }
+	
+	
+    /* -- 18.2 Widget lists -- */
+	.xoxo, .widget ul { margin: 0; padding: 0; list-style-type: none; }
+	.xoxo li, .widget ul li { line-height: 24px; padding: 0 0 0 12px; background: url(images/bg-arrow-grey.png) left 8px no-repeat; }
+    
+    #sidebar .widget_categories
+    {
+        border-bottom: none;
+    }
+    
+    #sidebar .widget_categories ul li
+    {
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 24px;
+        padding: 13px 0;
+        background: none;
+    }
+    #sidebar .widget_categories ul li a
+    {
+        padding-left: 30px;
+    }
+    
+    #sidebar .entry-title .entry-categories
+    {
+        display: inline-block;
+        /*height: 24px;*/
+        padding: 0 13px 0 5px;
+        margin-right: 5px;
+        zoom: 1;
+        *display: inline;
+    }
+    
+    #sidebar .entry-meta
+    {
+        font-size: 11px;
+        line-height: 17px;
+    }
+    
+	.xoxo a, .widget ul li a { color: #333; }
+	.xoxo a:hover, .widget ul li a:hover { text-decoration: none; }
+
+    /* -- 18.3 125 Ads Widget -- */
+	.tz_ad_widget { margin-bottom: 20px!important; }
+	.tz_ad_widget .ads-125 { width: 310px; }
+	.tz_ad_widget ul { list-style-type: none; margin: 0; padding: 0; }
+	.tz_ad_widget ul li { display: block; width: 145px; height: 145px; float: left; margin: 0 10px 10px 0; padding: 0!important; background: none!important; line-height: 20px!important; }
+	.ads-125 img { padding: 10px; background: #f8f8f8; }
+	.ads-125 img:hover { background: #333; }
+
+	/* -- 18.4 Twitter Widget -- */
+	.tz_tweet_widget ul { margin: 0 0 10px 0; list-style-type: none; }
+	.tz_tweet_widget ul li { background: url(images/bg-dots.gif) left bottom repeat-x!important; padding: 0 0 7px 0!important; margin: 0 0 7px 0; line-height: 20px; }
+	.tz_tweet_widget a { color: #666; }
+	.tz_tweet_widget a:hover { text-decoration: none; }
+	.tz_tweet_widget span a:hover { text-decoration: underline!important; }
+
+	/* -- 18.5 Flickr Widget -- */
+	.tz_flickr_widget #flickr_badge_wrapper { width: 310px; }
+	.flickr_badge_image { float: left; margin: 0 8px 8px 0; width: 95px; height: 95px; overflow: hidden; }
+	.flickr_badge_image img { background: #f8f8f8; padding: 9px; }
+	.flickr_badge_image img:hover { background: #333; }
+
+	/* -- 18.6 Video Widget -- */
+    #sidebar .tz_video_widget
+    {
+        border-bottom: none;
+        position: relative;
+    }
+    .tz_video_widget .widget-title
+    {
+        left: 0;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+    }
+    
+	.tz_video 
+    {
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+    }
+	.tz_video_desc
+    { 
+        margin: 10px 0; 
+        color: #666; 
+    }
+	
+	/* -- 18.7 Banner Widget -- */
+    .widget_banners .wrap_multiple
+    {
+        background-color: #ffffff;
+        padding: 11px;
+        overflow: hidden;
+    }
+	.widget_banners .wrap_multiple img 
+    { 
+        padding: 4px; 
+        display: block;
+        float: left;
+    }
+    
+    /* -- 18.8 Follow Us Widget -- */
+    #follow_us_wrapper
+    {
+        overflow: hidden;
+    }
+    
+    #follow_us_wrapper a
+    {
+        margin-right: 16px;
+        text-decoration: none;
+        float: left;
+        display: block;
+    }
+    
+    .widget_polls-widget
+    {
+        background-color: #ffffff;
+        position: relative;
+    }
+    
+    #follow_us_wrapper a img
+    {
+        display: block;
+    }
+    
+    /* -- 18.9 Newsletter Widget - Plugin ivaldi-mail-collector -- */
+    .ivaldi_mail_collector_frontend .input-container
+    {
+        width: 160px;
+    }
+    
+    .ivaldi_mail_collector_frontend form
+    {
+        overflow: hidden;
+        margin-bottom: 40px;
+    }
+    
+    .ivaldi_mail_collector_frontend .email-input
+    {
+        float: left;
+    }
+	
+	/* -- 18.10 Search Widget -- */
+	.widget_search { margin-bottom: 20px!important; }
+	.widget_search form { margin: 0; }
+	.widget_search .search-container { background: #f8f8f8; padding: 4px; }
+	.widget_search .search-inner { border: 1px solid #e8e8e8; background: #fff; padding-left: 5px; }
+	.widget_search #searchsubmit { float: right; border: none; cursor: pointer; padding: 7px; line-height: 1; }
+	.widget_search #s { padding: 0; float: left; margin-top: 7px; width: 205px; border: none; }
+	
+	/* -- 18.11 Tabbed Widget -- */    
+	.tz_tab_widget #tab-items
+    { 
+        background-color: #24262A;
+        height: 40px;
+        list-style-type: none;
+        margin: 0;
+        padding: 4px 0 0;
+    }
+	.tz_tab_widget #tab-items li 
+    { 
+        float: left; 
+        margin: 0 4px 0 0; 
+        line-height: 40px; 
+        padding: 0; 
+        background: none; 
+    }
+	.tz_tab_widget #tab-items li a 
+    { 
+        font-size: 17px; 
+        color: #ffffff; 
+        padding: 0 12px; 
+        display: block;
+        font-family: 'Homenaje',sans-serif;
+    }
+	.tz_tab_widget #tab-items li a:hover,
+    .tz_tab_widget #tab-items li.ui-tabs-selected a, 
+    .tz_tab_widget #tab-items li.ui-state-active a 
+    { 
+        background: #fff; 
+        text-decoration: none; 
+    }
+	
+	.tz_tab_widget .tabs-inner
+    { 
+        padding: 0 11px 11px; 
+        background: #fff; 
+    }
+    .tz_tab_widget .ui-tabs-hide { display: none; }
+
+	.tz_tab_widget .tab ul { list-style-type: none; margin: 0; }
+	.tz_tab_widget .tab ul li 
+    { 
+        background: none repeat scroll 0 0 transparent;
+        padding: 15px 0;
+    }
+	.tz_tab_widget .tab-thumb img 
+    {
+        float: left; 
+        margin: 0 15px 0 0; 
+    }
+	.tz_tab_widget .entry-title, 
+    .tz_tab_widget .entry-title a 
+    { 
+        font-size: 16px; 
+        line-height: 21px; 
+        margin-bottom: 5px;
+    }
+	.tz_tab_widget .entry-title a:hover { text-decoration: none; }
+	.tz_tab_widget .entry-meta, 
+    .tz_tab_widget .entry-meta a
+    {
+        margin: 0;
+    }
+    
+    .tz_tab_widget .entry-meta .views-count
+    {
+        padding-left: 22px;
+    }
+    
+	.tz_tab_widget .entry-meta a:hover { text-decoration: none; color: #333; }
+	.tab-comments .avatar { padding: 4px; background: #f8f8f8; border: 1px solid #eee; float: left; margin: 0 10px 0 0; }
+	.tab-comments .avatar:hover { background: #333; border-color: #222; }
+	.tab-tags a { color: #666; background: #f2f2f2; padding: 4px 8px; }
+	.tab-tags a:hover { color: #fff; text-decoration: none; }
+    
+    
+    #sidebar .widget_polls-widget h3
+    {
+        margin-bottom: 16px;
+    }
+    
+	/* -- 18.12 Social Counter Widget -- */
+	.tz_social_counter_widget { margin-bottom: 30px; }
+	.tz_social_counter_widget .widget-title { margin-bottom: 10px; }
+	.tz_social_counter_widget ul { list-style: none !important; list-style-image: none; padding: 0; margin: 0; width: 300px; }
+	.tz_social_counter_widget li { display: block; width: 300px; background: url(images/bg-dots.gif) left bottom repeat-x !important; padding: 10px 0 !important; margin: 0; }
+	.tz_social_counter_widget .img { width: 48px; float: left; margin-right: 10px}
+	.tz_social_counter_widget .img img { border: none; padding: none; background: none; height: 48px; width: 48px; }
+	.tz_social_counter_widget .txt { width: 242px; clear: right; }
+	.tz_social_counter_widget .txt p { margin: 0; font-weight: bold; font-size: 13px; }
+	.tz_social_counter_widget .txt span { display: block; text-transform: uppercase; color: #999; font-size: 10px; font-weight: normal; }
+
+    
+/* -- 19.0 Archives Template -- */
+.archive-lists .children { margin: 0 0 0 15px; list-style: circle outside; }
+
+
+/* -- 20.0 Full Width Template -- */
+.full-width { width: 940px!important; }
+
+
+/* -- 21.0 Contact Form Template -- */
+.addressBlock
+{
+    border: medium none;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.addressBlock tr,
+.addressBlock tr.hover
+{
+    border: none;
+    background-color: none !important;
+}
+
+.addressBlock td
+{
+    padding: 0 20px;
+    text-align: left;
+}
+.addressBlock td.addressWrap
+{
+    width: 290px;
+}
+
+.addressBlock .title
+{
+    font-size: 11px;
+    line-height: 1;
+    margin: 0 0 6px;
+}
+
+.addressBlock .address
+{
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+
+.addressBlock .phone,
+.addressBlock .email
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.addressBlock .email
+{
+    margin-bottom: 0;
+}
+
+.mainWrap
+{
+    overflow: hidden;
+}
+
+.gmapWrap
+{
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+.contact-page .gmapWrap
+{
+    padding-bottom: 45px;
+    height: 417px;
+    width: 614px;
+    float: left;
+}
+
+.gmap 
+{
+    width: 100%;
+    height: 100%;
+}
+
+#contactForm,
+.thanks
+{ 
+    padding-bottom: 35px;
+    float: right;
+    width: 289px;
+    height: 427px;
+    margin-bottom: 0;
+}
+
+#contactForm h2,
+.thanks h2
+{
+    font-family: 'Homenaje',sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+#contactForm ul 
+{ 
+    list-style: none; 
+    margin: 0; 
+}
+#contactForm ul li 
+{ 
+    margin-bottom: 20px;
+    padding: 0;
+    background: none;
+}
+
+#contactForm ul li.textarea 
+{ 
+    margin: 25px 0 35px; 
+}
+#contactForm ul li.buttons
+{
+    margin-bottom: 0px; 
+    overflow: hidden;
+}
+
+#contactForm input[type=text] 
+{ 
+    width: 257px;
+}
+#contactForm div.textarea-container 
+{ 
+    display: inline-block; 
+    zoom: 1;
+    *display: inline;
+}
+
+#contactForm textarea 
+{ 
+    width: 257px; 
+    height: 180px;
+    resize: none;
+    overflow: auto;
+    line-height: 1 !important;
+}
+
+#contactForm label.error 
+{ 
+    font-size: 11px;
+    font-style: normal;
+    left: 15px;
+    padding-top: 3px;
+    position: absolute;
+    text-align: left;
+    top: 28px;
+    width: 257px;
+}
+#contactForm .textarea-container label.error 
+{
+    top: 194px;
+}
+
+
+/* -- 22.0 Footer -- */
+#backToTop
+{
+    position: fixed;
+	bottom: 0;
+	right: 0;
+    height: 80px;
+    width: 80px;
+    display: block;
+    z-index: 1000;
+    display: none;
+}
+
+#footer
+{
+    background: none repeat scroll 0 0 #24262A;
+    padding: 25px 0 10px;
+    color: #65666A;
+    position: relative;
+}
+
+#foot-inner 
+{ 
+    width: 940px; 
+    margin: 0 auto; 
+}
+
+#foot-inner p
+{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.foot-widget-one, 
+.foot-widget-two
+{
+    float: left;
+    margin-right: 38px;
+    width: 288px;
+}
+
+.foot-widget-three
+{ 
+    width: 288px;
+    float: right; 
+}
+
+.copyright 
+{ 
+    font-size: 11px;
+    line-height: 19px;
+    margin: 0;
+    padding: 19px 0;
+    text-align: center;
+}
+
+
+/* -- 23.0 Category-blog -- */
+.category-blog .hentry,
+.search .hentry
+{
+    padding-bottom: 32px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.post-thumb
+{
+    position: relative;
+}
+
+.post-thumb > a
+{
+    display: block;
+}
+
+.post-thumb > a > img
+{
+    display: block;
+}
+
+h2#comments, 
+#respond h2,
+.post-thumb .entry-categories,
+.postGalleryBlock .imageWrap .title,
+.gallery-block .title
+{
+    height: 24px;
+    padding: 5px 20px 5px 10px;
+    font-family: 'Homenaje',sans-serif;
+}
+
+.post-thumb .entry-categories,
+.postGalleryBlock .imageWrap .title,
+.gallery-block .title
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.post-thumb .entry-categories a
+{
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.post .continue
+{
+    font-family: 'Arial';
+    font-size: 12px;
+    line-height: 22px;
+    padding: 0 14px 0 7px;
+    display: inline-block;
+    margin-top: 10px;
+    zoom: 1;
+    *display: inline;
+}
+
+.entry-summary p
+{
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.entry-title span,
+.entry-title span > a
+{
+    font-family: 'Arial';
+    font-size: 11px;
+    line-height: 17px;
+}
+.entry-title span
+{
+    display: inline-block;
+    padding-left: 18px;
+    zoom: 1;
+    *display: inline;
+}
+
+
+/* -- 24.0 Page Template -- */
+.page .hfeed > .wrap,
+.single .hfeed > .wrap
+{
+    border-bottom: 2px solid #24262A;
+    border-right: 1px solid #e3e5e5;
+}
+
+.page .hfeed .hentry
+{
+    padding-right: 20px;
+}
+
+.entry-content a
+{
+    text-decoration: underline;
+}
+
+
+/* -- 25.0 Page Template full-width -- */
+.page-template-template-full-width-php .hfeed > .wrap,
+.page-template-template-contact-php .hfeed > .wrap
+{
+    border-bottom: 2px solid #24262A;
+    border-right: none;
+}
+
+.page-template-template-full-width-php .hfeed .hentry,
+.page-template-template-contact-php .hfeed .hentry
+{
+    padding-right: 0px;
+}
+
+.page-template-template-contact-php .hfeed .hentry,
+.page-template-template-contact-php #primary
+{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.page-template-template-contact-php .entry-content 
+{
+    margin-bottom: 45px;
+}
+
+
+/* -- 26.0 Single Template -- */
+.single .hentry 
+{
+    padding-right: 40px;
+}
+
+.single .post-thumb 
+{
+    margin-bottom: 30px;
+}
+
+.entry-header .author
+{
+    padding-left: 25px;
+    display: inline-block;
+    margin-right: 30px;
+    zoom: 1;
+    *display: inline;
+}
+
+.entry-header .author > a
+{
+    text-transform: capitalize;
+}
+
+.entry-header .published,
+.commentmetadata
+{
+    padding-left: 25px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.commentmetadata
+{
+    margin: 2px 0;
+    height: 16px;
+}
+
+.post-wrapper
+{
+    overflow: hidden;
+}
+
+.gallery-post .post-thumb,
+.gallery-post .entry-title,
+.portfolio-post .post-thumb,
+.portfolio-post .entry-title,
+.portfolio-post .entry-meta
+{
+    margin-bottom: 8px;
+}
+
+.portfolio-post .entry-meta
+{
+    font-size: 11px;
+}
+
+.portfolio-post,
+.gallery-post
+{
+    float: left;
+    margin-right: 38px;
+    padding-bottom: 38px;
+    width: 288px;
+    margin-bottom: 0;
+    height: 370px;
+    position: relative;
+}
+
+.portfolio-post .continue
+{
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+}
+
+.category-portfolio .post-wrapper .portfolio-post:nth-child(3n),
+.category-gallery .post-wrapper .gallery-post:nth-child(3n),
+#recent-news-block .post:nth-child(3n)
+{
+    margin-right: 0;
+}
+
+.category-portfolio .post-wrapper .portfolio-post:nth-child(-n+3),
+.category-gallery .post-wrapper .gallery-post:nth-child(-n+3)
+{
+    margin-bottom: 40px;
+}
+
+.portfolio-post .comment-count,
+.gallery-post .image-count,
+.gallery-post-small .image-count
+{
+    display: inline-block;
+    font-family: Arial;
+    font-size: 14px !important;
+    font-weight: bold;
+    line-height: 1 !important;
+    margin-left: 5px !important;
+    zoom: 1;
+    *display: inline;
+}
+
+#porfolio_categories
+{
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+    float: right;
+}
+
+#porfolio_categories li
+{
+    display: inline-block;
+    margin-right: 30px;
+    zoom: 1;
+    *display: inline;
+}
+
+#porfolio_categories li:last-child
+{
+    margin-right: 0;
+}
+
+#porfolio_categories li a,
+#porfolio_categories li a:hover
+{
+    display: block;
+    font-weight: bold;
+    line-height: 16px;
+    padding-left: 23px;
+    text-decoration: none;
+}
+
+
+/* -- 27.0 Gallery Category -- */
+.category-gallery .post-wrapper .gallery-post
+{
+    padding-bottom: 18px;
+    height: 360px;
+}
+
+.post-thumb .views-count
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    height: 18px;
+    line-height: 18px;
+    padding: 8px 20px 8px 10px;
+}
+
+.count
+{
+    background: url('images/views-icon.png') no-repeat left center transparent;
+    padding-left: 24px;
+}
+
+.gallery-post .image-count,
+.gallery-post-small .image-count,
+.portfolio-post .comment-count
+{
+    padding-left: 20px;
+}
+
+.portfolio-post .comment-count
+{
+    height: 14px;
+    padding-top: 1px;
+    vertical-align: middle;
+}
+
+
+/* -- 28.0 Home Template -- */
+.mainHomeWrapper
+{
+    width: 100%;
+    overflow: hidden;
+    height: 408px;
+}
+
+/* -- 28.1 Big Slider -- */
+.bigSliderContainer
+{
+    height: 408px;
+    margin: 0 auto;
+    width: 990px;
+    position: relative;
+}
+
+.bigSliderWrap
+{
+    position: absolute;
+    left: -125px;
+    top: 0;
+    width: 1240px;
+    height: 408px;
+    background-color: #f3f5f5;
+    margin: 0 auto;
+}
+
+.bigSliderWrap .item
+{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+}
+
+.bigSliderWrap .item .text
+{
+    font-family: 'Homenaje',sans-serif;
+    font-size: 33px;
+    line-height: 45px;
+    width: 614px;
+    margin-left: 150px;
+    margin-top: 130px;
+}
+
+.bigSliderWrap .item .more-big
+{
+    display: inline-block;
+    height: 41px;
+    margin-right: -50px;
+    margin-top: -5px;
+    overflow: visible;
+    position: relative;
+    top: 10px;
+    width: 50px;
+    zoom: 1;
+    *display: inline;
+}
+
+
+.mainHomeWrapper .navWrap
+{
+    height: 72px;
+    margin: 0 auto;
+    max-width: 1240px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    top: -230px;
+}
+
+.mainHomeWrapper .navContainer
+{
+    height: 72px;
+    max-width: 1240px;
+    position: relative;
+}
+
+.mainHomeWrapper .nextPrevBlock
+{
+    position: absolute;
+    height: 72px;
+    overflow: hidden;
+    width: 160px;
+    top: 0;
+    right: 0;
+    z-index: 50;
+}
+
+.nextPrevBlock > a,
+.nextPrevLinks
+{
+    display: block;
+    float: right;
+    width: 80px;
+    height: 72px;
+    background-image: url(images/pagenavi-sprite.png);
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+.prevLink
+{
+    background-position: left top;
+}
+
+.prevLink:hover
+{
+    background-position: left bottom;
+}
+
+.nextLink
+{
+    background-position: right top;
+}
+
+.nextLink:hover
+{
+    background-position: right bottom;
+}
+
+
+/* -- 28.2 Story slider -- */
+.storySliderWrap
+{
+    background-color: #24262A;
+    height: 230px;
+    width: 100%;
+    position: relative;
+}
+
+.storySliderWrap .wrap
+{
+    width: 978px;
+    height: 100%;
+    margin: 0 auto -72px;
+    overflow: hidden;
+}
+
+.nextPrevBlock .prevLink
+{
+    float: left;
+}
+
+.nextPrevBlock .nextLink
+{
+    float: right;
+}
+
+.storySliderWrap .item 
+{
+    float: left;
+    height: 230px;
+    padding: 0;
+    margin: 0 19px;
+    position: relative;
+    width: 288px;
+    overflow: hidden;
+}
+
+.storySliderWrap .item .number
+{
+    float: left;
+    width: 60px;
+    padding-right: 19px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 45px;
+    font-family: 'Homenaje',sans-serif;
+    height: 85px;
+}
+
+.storySliderWrap .item .innerBox
+{
+    float: left;
+    width: 209px;
+    height: 100%;
+}
+
+.storySliderWrap .item .title
+{
+    padding: 25px 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Homenaje',sans-serif;
+}
+
+.storySliderWrap .item .text
+{
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.storySliderWrap .item .text a
+{
+    text-decoration: underline;
+}
+
+.storySliderWrap .prevLink
+{
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+.storySliderWrap .nextLink
+{
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+
+/* -- 28.3 Recent Posts -- */
+#recent-news-block 
+{ 
+    width: 100%; 
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+
+/* -- 28.4 Category Block Posts -- */
+.category-block 
+{ 
+    width: 100%;
+    overflow: hidden; 
+}
+
+.category-block .portfolio-post
+{
+    padding-right: 0 !important;
+    margin-bottom: 40px;
+}
+
+.category-block .other-posts
+{
+    width: 288px;
+    margin-bottom: 40px;
+    height: 408px;
+    position: relative;
+}
+
+.other-posts .seeMore
+{
+    font-size: 11px;
+    line-height: 17px;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 15px; 
+    right: 0;
+    padding-left: 15px;
+}
+
+.home-small-post
+{
+    margin: 0;
+    padding: 0 0 15px 0 !important;
+    overflow: hidden;
+    min-height: 80px;
+}
+
+.home-small-post .tab-thumb
+{
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.home-small-post .entry-title, 
+.home-small-post .entry-title a 
+{
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 5px;
+}
+
+.home-small-post .entry-title .more
+{
+    height: 13px;
+    padding-left: 6px;
+    vertical-align: baseline;
+    width: 13px;
+}
+
+.home-small-post .entry-meta
+{
+    font-size: 11px;
+    margin-bottom: 0px;
+}
+
+.home-small-post .entry-header .published
+{
+    background: none;
+    padding: 0;
+}
+
+
+/* -- 28.5 Bottom Blocks -- */
+.bottom-blocks 
+{ 
+    margin-bottom: 0px; 
+    overflow: hidden;
+}
+
+
+/* -- 28.6 Home Gallery block -- */
+.gallery-block
+{
+    overflow: hidden;
+    height: 219px;
+    margin: 0 0 40px;
+}
+
+.home-block-wide
+{
+    position: relative;
+}
+
+.home-block-wide .delimiter
+{
+    width: 288px;
+    height: 1px;
+    position: absolute;
+}
+
+.home-block-wide .bottom-left
+{
+    bottom: 0;
+    left: 0;
+}
+
+.home-block-wide .bottom-right
+{
+    bottom: 0;
+    right: 0;
+}
+
+.gallery-post-small
+{
+    float: left;
+    margin-right: 38px;
+    padding: 0 !important;
+    width: 125px;
+}
+
+.gallery-post-small:nth-child(4n)
+{
+    margin-right: 0;
+}
+
+.gallery-post-small .post-thumb
+{
+    margin-bottom: 5px;
+}
+
+.gallery-post-small .entry-title,
+.gallery-post-small .entry-title a
+{
+    margin: 0;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.bottom-blocks .home-small-post
+{
+    width: 288px;
+    margin-right: 38px;
+    float: left;
+}
+
+.bottom-blocks .home-small-post:nth-child(2n)
+{
+    margin-right: 0;
+}
+
+
+/* -- x.x Gallery Post Thumbnail Block - Plugin banesto-gallery-post-attach -- */
+.postGalleryBlock
+{
+    overflow: hidden;
+    padding-bottom: 40px;
+    margin: 40px 0 0 0;
+}
+
+/* -- x.x Gallery Inside Content - Plugin banesto-gallery-post-attach -- */
+.hentry .postGalleryBlock
+{
+    padding-bottom: 40px;
+    margin: 10px 0 40px;
+}
+
+.postGalleryBlock .imageWrap
+{
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+.postGalleryBlock .imageWrap a
+{
+    margin-right: 38px;
+    text-decoration: none;
+    float: left;
+}
+.postGalleryBlock .imageWrap a img
+{
+    display: block;
+}
+
+.postGalleryBlock .imageWrap a:last-child
+{
+    margin-right: 0;
+}
+
+.postGalleryBlock .seeMore
+{
+    float: right;
+    display: block;
+    margin: 47px 0;
+    padding-right: 20px;
+    font-family: 'Homenaje',sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.postGalleryBlock .imageWrap .title,
+.gallery-block .title
+{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.postGallerySlideshow
+{
+    overflow: hidden;
+    margin: 10px 0 20px;
+}
+
+.postGallerySlideshow p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.postGallerySlideshow .innerWrap
+{
+    position: relative;
+}
+
+.postGallerySlideshow .imageWrap
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.postGallerySlideshow .nextPrevLinks
+{
+    position: absolute;
+    top: 50%;
+    margin-top: -36px;
+    z-index: 10;
+}
+
+.postGallerySlideshow .prevtLink
+{
+    left: 0;
+}
+
+.postGallerySlideshow .nextLink
+{
+    right: 0;
+}
+
+.postGallerySlideshow .imageTitle
+{
+    font-size: 13px;
+    line-height: 19px;
+    padding: 5px 0;
+}
+
+
+/* -- x.x Clearfix -- */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .clearfix { display: inline-block; } /* Hide from IE Mac \*/ .clearfix { display: block; } /* End hide from IE Mac */ .none { display: none; } /* End Clearfix */
+
+
+/* -- x.x MailChimp plugin -- */
+#mc-indicates-required, .mc_required, .mc_error_msg { color: #b30000 !important; }
+.mc_form_inside input, #mc_message { display: block; width: 100%; margin-bottom: 10px; }
+.mc_signup_submit { text-align: left !important; margin-top: 10px; }
+#mc_signup_submit { background-color: #df6838; border: none; color: #fff; font-weight: bold; padding: 5px 15px; width: auto; margin-bottom: 0; }
+

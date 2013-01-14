@@ -1,0 +1,492 @@
+/* --
+	
+	* Default CSS File *
+	This file contains styles related to the colour scheme of the theme
+	--
+	Please make any amendments to "custom.css" rather than this file
+	This will make updating your theme files much easier without overwriting your changes!
+
+-- */
+
+a,
+#top-bar a:hover,
+#logo a:hover,
+.widget-title,
+#recent-news-block .entry-title a:hover,
+#featured-posts-block .entry-title a:hover,
+.category-block .entry-title a:hover,
+.category-block-summary .entry-title a:hover,
+.tz_tweet_widget a:hover,
+.xoxo a:hover,
+.tz_tab_widget #tab-items li a:hover,
+.tz_tab_widget #tab-items li.ui-tabs-selected a,
+.tz_tab_widget #tab-items li.ui-state-active a,
+.tz_tab_widget .entry-title a:hover,
+.widget ul li a:hover,
+#related-posts .entry-title a:hover, 
+p.breadcrumb,
+li.bypostauthor cite, li.bypostauthor cite a,
+li.comment cite a:hover,
+#archive-posts .post-container .entry-title a:hover,
+#single-column-right ul.share li a:hover,
+#single-column-right ul.rss li a:hover,
+#secondary-nav ul li.current_page_item a,
+#secondary-nav ul li.current_page_item li a:hover,
+#secondary-nav ul li.current_menu_item a,
+#secondary-nav ul li.current_menu_item a:hover,
+#footer .widget-title,
+.entry-header .author > a,
+.copyright,
+#foot-notes, #foot-notes a,
+li.comment cite, 
+li.bypostauthor li.comment cite,
+.entry-meta .comment-count,
+.entry-meta .comment-count a,
+.tz_tab_widget .entry-meta .views-count a,
+.tz_tab_widget .entry-meta .comment-count a,
+#sidebar .widget_categories ul li a,
+.wp-polls-ul label:hover,
+.wp-polls-ul li.active label,
+.addressBlock .email,
+label.error,
+.storySliderWrap .item .text a,
+.postGalleryBlock .seeMore,
+.other-posts .seeMore
+{ 
+    color: #e72d39; 
+}
+
+.tz_tweet_widget span a
+{ 
+    color: #df6838 !important; 
+}
+
+.widget_search #searchsubmit,
+.tab-tags a:hover, 
+#commentform input#submit,
+#contactForm button,
+.coda-nav ul li a.current,
+input[type=submit],
+#mc_signup_submit,
+.wp-polls .vote-button,
+.ivaldi_mail_collector_frontend .submit,
+.bk-button-wrapper .style1
+{ 
+    background: url('../images/submit-bg.png') repeat-x scroll 0 0 #E72D39; 
+    color: #fff; 
+    border-right: 1px solid #cf1d2a;
+    border-left: 1px solid #cf1d2a;
+    border-bottom: 1px solid #c21522;
+}
+
+.search-container div.input 
+{
+    background: url('../images/input-bg.png') repeat-x scroll 0 0 #E8EDF1;
+    border: 1px solid #d7d8d8;
+}
+
+.search-container input.search-input 
+{
+    color:#818484;
+    text-shadow:0 1px 1px #fff;
+}
+
+.search-container .searchsubmit
+{
+    border: none;
+    padding: none;
+    margin: none;
+    background: url('../images/search-submit.png') no-repeat 0 0 transparent;
+    width: 31px;
+    height: 31px;
+}
+
+.input-container 
+{ 
+    background: url('../images/input-bg.png') repeat-x scroll 0 0 #eef0f0;
+    border: 1px solid #d7d8d8;
+}
+
+.textarea-container 
+{
+    border: 1px solid #d7d8d8;
+    background-color: #eef0f0; 
+}
+	
+.input-container input[type=text],
+.textarea-container textarea
+{
+    color:#818484;
+    text-shadow:0 1px 1px #fff;
+}
+
+.entry-header .author
+{
+    background: url('../images/post-data-sprite.png') no-repeat 0 0;
+}
+
+.entry-header .published,
+li.comment a.commentmetadata
+{
+    background: url("../images/post-data-sprite.png") no-repeat scroll 0 -18px transparent;
+}
+
+.entry-meta .views-count
+{
+    background: url("../images/post-data-sprite.png") no-repeat scroll 0 -37px transparent;
+}
+
+.tz_tab_widget .entry-meta .author-simple
+{
+    color: #a2a2a2;
+}
+
+.tz_tab_widget .entry-meta a
+{
+    color: #7b7b7b;
+}
+
+
+.entry-title span > a
+{
+    color: #7b7b7b;
+}
+
+.entry-summary p
+{
+    color: #858585;
+}
+
+.entry-title span,
+.entry-title span > a,
+a.commentmetadata
+{
+    color: #a2a2a2;
+}
+
+.post .continue
+{
+    background: url('../images/read-more-bg.png') no-repeat right center transparent;
+    color: #fff;
+}
+
+h2#comments, 
+#respond h2,
+.post-thumb .entry-categories,
+.post-thumb .views-count,
+#sidebar .widget-title,
+#sidebar .entry-title .entry-categories,
+.tz_video_widget .widget-title,
+.postGalleryBlock .imageWrap .title,
+.gallery-block .title
+{
+    background: url('../images/label-bg.png') no-repeat right center transparent;
+    color: #fff;
+}
+
+
+
+.post-thumb .entry-categories a,
+#sidebar .entry-title .entry-categories a,
+.storySliderWrap .item .title
+{
+    color: #fff;
+}
+
+.category-blog .hentry,
+.contact-page .gmapWrap,
+#contactForm,
+.postGalleryBlock,
+.portfolio-post,
+.gallery-post,
+.other-posts,
+.home-block-wide .delimiter,
+#search-results .hentry
+{
+    border-bottom: 2px solid #24262A;
+}
+
+h1.mainTitle,
+#primary-nav ul a,
+.postGallerySlideshow .imageTitle,
+.accordions-shortcode h3 a,
+.accordions-shortcode .ui-accordion-content
+{
+    color: #282d3a;
+}
+
+#primary-nav .back
+{
+    background-color: #E72D39;
+}
+
+#backToTop
+{
+    background: url("../images/back-to-top.png") no-repeat scroll center center transparent;
+}
+
+ul.share li
+{
+    background: url(../images/icons-social.png) 0 0 no-repeat; 
+    color: #666; 
+}
+
+p.breadcrumb a
+{
+    background: url('../images/breadcrumb-delimiter.png') no-repeat left 3px;
+    color: #e93b46;
+}
+
+.entry-title,
+.entry-title a,
+p.breadcrumb a:hover,
+.wp-polls-title,
+.wp-polls-ul li label
+{ 
+    color: #24262a; 
+}
+
+.entry-meta 
+{
+    color: #a2a2a2;
+}
+
+
+#tagline
+{
+    color: #C6CBCB;
+}
+
+#header 
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #E3E5E5;
+}
+
+.container
+{
+    background-color: #F3F5F5;
+}
+
+.copyright 
+{ 
+    background: none repeat scroll 0 0 #202226;
+    border-top: 1px solid #282B2F;
+}
+
+
+.tz_tab_widget .entry-title, 
+.tz_tab_widget .entry-title > a
+{
+    color: #000000;
+}
+
+#sidebar .widget_categories ul
+{
+    border-top: 1px solid #e3e5e5;
+}
+#sidebar .widget_categories ul li
+{
+    border-bottom: 1px solid #e3e5e5;
+}
+
+#sidebar .widget_categories ul li a,
+#porfolio_categories li a 
+{
+    background: url("../images/bullet-round.png") no-repeat scroll left 1px transparent;
+}
+
+#sidebar .widget_categories ul li:hover a,
+#sidebar .widget_categories ul li.current-cat a
+{
+    background: url("../images/bullet-round-active.png") no-repeat scroll left 1px transparent;
+}
+
+/* polls */
+
+.wp-polls-ul
+{
+    border-top: 1px solid #E3E5E5;
+}
+
+.wp-polls-ul li
+{
+    border-bottom: 1px solid #E3E5E5;
+}
+
+.wp-polls-ul .vote-bullet
+{
+    background: url('../images/poll-sprite.png') no-repeat 0 0 transparent;
+}
+
+.wp-polls-ul label:hover .vote-bullet,
+.wp-polls-ul li.active .vote-bullet
+{
+    background-position: 0 -16px;
+}
+
+.wp-polls .pollbar 
+{
+    background-color: #e72d39;
+}
+
+.wp-polls-ans .back-to-voting
+{
+    background: url('../images/bullet-round-active.png') no-repeat 0 3px transparent;
+}
+
+/* contacts template */
+
+.addressBlock td
+{
+    border-left: 3px solid #24262a;
+}
+
+.addressBlock .title
+{
+    color: #797C7C;
+}
+
+.addressBlock .address,
+.addressBlock .phone
+{
+    color: #1b1e23;
+}
+
+/* portfolio category */
+
+.portfolio-post .comment-count
+{
+    background: url('../images/comment-icon.png') no-repeat 0 2px transparent;
+    color: #e72d39;
+}
+
+.entry-meta a 
+{
+    color: #7B7B7B;
+}
+
+#porfolio_categories li a:hover,
+#porfolio_categories li.current-cat a
+{
+    background: url("../images/bullet-round-active-down.png") no-repeat scroll left 1px transparent;
+}
+
+/* story slider */
+
+.storySliderWrap .item .number
+{
+    background: url("../images/story-number-bg.png") no-repeat scroll 0 0 transparent;
+    color: #fff;
+}
+
+.storySliderWrap .item .text
+{
+    color: #676a6f;
+}
+
+/* gallery category */
+
+.category-gallery .image-count
+{
+    background: url('../images/photos-icon.png') no-repeat 0 2px transparent;
+    color: #e72d39;
+}
+
+.postGalleryBlock .seeMore
+{
+    background: url("../images/bullet-round-active-right.png") no-repeat scroll right center transparent;
+}
+
+/* home blocks */
+
+
+.other-posts .seeMore
+{
+    background: url("../images/red-arrow-right.png") no-repeat scroll left center transparent;
+}
+
+.home-small-post .entry-title .more
+{
+    background: url("../images/bullet-round-active-right.png") no-repeat scroll right bottom transparent;
+}
+
+/* content entry */
+
+.entry-content ul li
+{
+    background: url('../images/content-bullet.png') no-repeat scroll 0 6px transparent;
+}
+
+/* shortcodes */
+
+.bk-button-wrapper .style2 
+{
+	color: #ffffff;
+	background: #e72d39;
+}
+
+.bk-button-wrapper .style3
+{
+	color: #ffffff;
+	background: #24262a;
+}
+
+.content-spacer .style1
+{
+    border-bottom: 1px solid #d0d3d3;
+}
+
+.content-spacer .style2
+{
+    border-bottom: 1px dotted #000000;
+}
+
+.content-spacer .style3
+{
+    border-bottom: 2px solid #24262a;
+}
+
+.quote-wrapper .style1
+{
+    background: url('../images/quote.png') no-repeat 0 6px transparent;
+}
+
+.quote-wrapper .style1 .innerWrap
+{
+    border-left: 1px solid #d0d3d3;
+    color: #282d3a;
+}
+
+.quote-wrapper .style2 .innerWrap
+{
+    border-left: 3px solid #24262a;
+    color: #282d3a;
+}
+
+.accordions-shortcode h3 a
+{
+    background: url('../images/accordion-sprite.png') no-repeat scroll 0 center transparent;
+}
+
+#primary-nav ul li.hasChildren a
+{
+    background: url('../images/menu-parent.png') no-repeat scroll right 20px transparent;
+}
+
+.bigSliderWrap .item .text
+{
+    color: #2d2d2d;
+}
+
+.bigSliderWrap .more-big
+{
+    background: url('../images/more-big.png') no-repeat scroll right 0 transparent;
+}
+
+.ivaldi_mail_collector-error,
+.ivaldi_mail_collector-succes
+{
+    color: #fff;
+    font-weight: bold;
+}

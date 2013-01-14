@@ -1,0 +1,6 @@
+<wpml-config>
+	<admin-texts>
+		<key name="tz_recent_title"/>
+		<key name="tz_featured_title"/>
+	</admin-texts>    
+</wpml-config>

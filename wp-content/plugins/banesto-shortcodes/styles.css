@@ -1,0 +1,204 @@
+/* columns */
+
+.one_half
+{
+    width:46%; 
+}
+
+.one_third
+{ 
+    width:30.66%; 
+}
+
+.one_fourth
+{ 
+    width:22%; 
+}
+
+.one_half,
+.one_third,
+.two_third,
+.three_fourth
+{ 
+    position:relative; 
+    margin-right:4%; 
+    float:left; 
+}
+
+.one_half
+{
+    margin-right:8%; 
+}
+
+.last
+{ 
+    margin-right:0 !important; 
+    clear:right; 
+}
+
+.clearboth
+{
+    clear: both;
+    height: 20px;
+}
+
+/* buttons */
+
+.bk-button-wrapper a 
+{
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.bk-button-wrapper .bk-button 
+{
+	display: inline-block;
+	margin: 0 7px 0px 0;
+    
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+    color: #FFFFFF;
+    font-family: 'Homenaje',sans-serif;
+    font-size: 17px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.bk-button-wrapper a:hover 
+{
+	text-decoration: underline;
+}
+
+
+.bk-button-wrapper .left 
+{
+	float: left;
+}
+
+.bk-button-wrapper .right 
+{
+	float: right;
+}
+
+.bk-button-wrapper .style1
+{	
+	color: #ffffff;
+	background: #e72d39;
+}
+
+.bk-button-wrapper .style2 
+{
+	color: #ffffff;
+	background: #e72d39;
+}
+
+.bk-button-wrapper .style3
+{
+	color: #ffffff;
+	background: #24262a;
+}
+
+/* spacer */
+
+.content-spacer
+{
+    overflow: hidden;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.content-spacer > div
+{
+    height: 0px;
+    width: 100%;
+}
+
+.content-spacer .style1
+{
+    border-bottom: 1px solid #d0d3d3;
+}
+
+.content-spacer .style2
+{
+    border-bottom: 1px dotted #000000;
+}
+
+.content-spacer .style3
+{
+    border-bottom: 2px solid #24262a;
+}
+
+/* quotes */
+
+.quote-wrapper
+{
+    margin: 20px 0 40px;
+    width: 50%;
+}
+
+.quote-wrapper .style1
+{
+    padding-left: 37px;
+}
+
+.quote-wrapper .style1 .innerWrap
+{
+    padding-left: 22px;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.quote-wrapper .style2
+{
+    padding: 0px;
+}
+
+.quote-wrapper .style2 .innerWrap
+{
+    padding-left: 28px;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+/* accordion */
+
+.accordions-shortcode
+{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.accordions-shortcode h3,
+.accordions-shortcode h3 a
+{
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.accordions-shortcode h3 a
+{
+    text-decoration: none;
+    padding-left: 37px;
+    display: block;
+}
+
+.accordions-shortcode h3.ui-state-active a
+{
+    background-position: -970px center;
+}
+
+.accordions-shortcode .ui-accordion-content
+{
+    font-size: 13px;
+    line-height: 21px;
+    padding: 0px 0 5px 37px;
+}
